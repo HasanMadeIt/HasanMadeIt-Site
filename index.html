@@ -55,7 +55,8 @@
       justify-content: center;
       padding: 1.5rem;
       text-align: center;
-      overflow: hidden;
+      overflow-x: hidden;   /* <-- only hide horizontal overflow */
+      overflow-y: auto;     /* <-- allow scroll vertically */
     }
 
     @keyframes bgMove {
@@ -274,6 +275,7 @@
       body {
         align-items: flex-start;
         padding-top: 2.3rem;
+        overflow-y: auto;   /* make sure this isn't lost */
       }
     }
   </style>
