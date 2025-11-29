@@ -56,7 +56,7 @@
       padding: 1.5rem;
       text-align: center;
       overflow-x: hidden;
-      overflow-y: auto;  /* fixes mobile clipping */
+      overflow-y: auto;
     }
 
     @keyframes bgMove {
@@ -159,7 +159,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 0.55rem;
-      margin-bottom: 2.2rem; /* extra space to stop footer overlap */
+      margin-bottom: 2.2rem;
     }
 
     .chip {
@@ -177,7 +177,7 @@
       opacity: 0.85;
     }
 
-    /* --- FOOTER FIX --- */
+    /* --- FOOTER --- */
     .footer-row-inner {
       display: flex;
       flex-direction: column;
@@ -224,6 +224,18 @@
       transition: all 0.18s ease-out;
     }
 
+    /* restore icon sizing */
+    .social-link svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    .social-link span {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
     .social-link:hover {
       color: var(--text-main);
       border-color: var(--accent);
@@ -242,6 +254,11 @@
       color: var(--accent);
       text-decoration: none;
       border-bottom: 1px dashed rgba(249, 115, 22, 0.5);
+    }
+
+    .ref a:hover {
+      border-bottom-style: solid;
+      opacity: 0.9;
     }
 
     @media (min-width: 720px) {
