@@ -203,17 +203,17 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 0;
-      padding: 0.28rem 1rem;
+      padding: 0.2rem 0.9rem;
       max-width: 100%;
       box-sizing: border-box;
 
-      font-size: 0.78rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--accent);
       background: var(--accent-soft);
       border-radius: 999px;
-      border: 1px solid rgba(248, 250, 252, 0.06);
+      border: 1px solid rgba(249, 115, 22, 0.65);
     }
 
     .footer-row {
@@ -299,10 +299,15 @@
         gap: 1rem;
       }
 
+      .status {
+        white-space: nowrap;   /* keep it on one line on desktop */
+      }
+
       .ref {
         text-align: right;
       }
     }
+
 
     @media (max-width: 420px) {
       .card { padding: 2rem 1.3rem 1.7rem; }
@@ -400,14 +405,6 @@
                 />
               </svg>
               <span>snap</span>
-            </a>
-
-            <!-- Telegram -->
-            <a class="social-link" href="https://t.me/HasanMadeIt" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9.04 13.41 9 17a1 1 0 0 0 1.64.77l2.21-1.8 3.84 2.8a1 1 0 0 0 1.56-.63l2.75-12a1 1 0 0 0-1.37-1.15L3.44 10.3a1 1 0 0 0 .06 1.88l5.54 1.85Zm1.96 4.2.03-2.72 4.98-4.5a.5.5 0 0 0-.6-.8l-6.92 3.5-.03.01-3.9-1.3L19.06 6.5l-2.3 10.05-4.47-3.26a1 1 0 0 0-1.24.05l-1.05.87Z"/>
-              </svg>
-              <span>telegram</span>
             </a>
           </div>
         </div>
