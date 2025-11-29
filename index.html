@@ -38,24 +38,12 @@
       padding: 0;
     }
 
-    html,
     body {
-      height: 100%;
-    }
-
-    @keyframes bgMove {
-      0% { background-position: 0% 0%; }
-      50% { background-position: 50% 100%; }
-      100% { background-position: 100% 50%; }
-    }
-
-    body {
+      min-height: 100vh;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
         "Segoe UI", sans-serif;
       line-height: 1.5;
       color: var(--text-main);
-
-      /* single background source on body only */
       background:
         radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.45), transparent 55%),
         radial-gradient(circle at 100% 100%, rgba(249, 115, 22, 0.55), transparent 55%),
@@ -63,15 +51,19 @@
         linear-gradient(135deg, var(--bg-1), var(--bg-2));
       background-size: 140% 140%;
       animation: bgMove 24s ease-in-out infinite alternate;
-
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
       text-align: center;
-
       overflow-x: hidden;
       overflow-y: auto;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 50% 100%; }
+      100% { background-position: 100% 50%; }
     }
 
     .noise {
@@ -198,11 +190,28 @@
       opacity: 0.9;
     }
 
+    /* --- FOOTER --- */
     .footer-row-inner {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 0.7rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 0.12rem 0.6rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 6px;
+      border: 1px solid rgba(249, 115, 22, 0.35);
+      opacity: 0.85;
     }
 
     .footer-row {
@@ -288,10 +297,15 @@
         gap: 1rem;
       }
 
+      .status {
+        white-space: nowrap;   /* keep it on one line on desktop */
+      }
+
       .ref {
         text-align: right;
       }
     }
+
 
     @media (max-width: 420px) {
       .card { padding: 2rem 1.3rem 1.7rem; }
