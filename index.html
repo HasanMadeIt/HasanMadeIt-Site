@@ -55,8 +55,8 @@
       justify-content: center;
       padding: 1.5rem;
       text-align: center;
-      overflow-x: hidden;   /* <-- only hide horizontal overflow */
-      overflow-y: auto;     /* <-- allow scroll vertically */
+      overflow-x: hidden;
+      overflow-y: auto;  /* fixes mobile clipping */
     }
 
     @keyframes bgMove {
@@ -159,7 +159,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 0.55rem;
-      margin-bottom: 1.9rem;
+      margin-bottom: 2.2rem; /* extra space to stop footer overlap */
     }
 
     .chip {
@@ -177,22 +177,29 @@
       opacity: 0.85;
     }
 
+    /* --- FOOTER FIX --- */
+    .footer-row-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      padding-inline: 1rem;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
     .footer-row {
       display: flex;
       flex-direction: column;
       gap: 0.9rem;
       align-items: center;
-    }
-
-    .status {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--accent);
-      background: var(--accent-soft);
-      padding: 0.28rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(248, 250, 252, 0.06);
     }
 
     .socials {
@@ -217,17 +224,6 @@
       transition: all 0.18s ease-out;
     }
 
-    .social-link svg {
-      width: 14px;
-      height: 14px;
-      fill: currentColor;
-    }
-
-    .social-link span {
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
     .social-link:hover {
       color: var(--text-main);
       border-color: var(--accent);
@@ -248,36 +244,34 @@
       border-bottom: 1px dashed rgba(249, 115, 22, 0.5);
     }
 
-    .ref a:hover {
-      border-bottom-style: solid;
-      opacity: 0.9;
-    }
-
     @media (min-width: 720px) {
       .card { padding: 2.8rem 2.4rem 2.4rem; }
-      .footer-row {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.8rem;
-      }
+
       .footer-row-inner {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
       }
+
       .ref {
         text-align: right;
       }
+    }
+
+    @media (max-width: 420px) {
+      .card { padding: 2rem 1.3rem 1.7rem; }
+      h1 { letter-spacing: 0.12em; }
+      .grid { gap: 0.4rem; }
     }
 
     @media (max-height: 560px) {
       body {
         align-items: flex-start;
         padding-top: 2.3rem;
-        overflow-y: auto;   /* make sure this isn't lost */
       }
     }
+
   </style>
 </head>
 <body>
