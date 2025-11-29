@@ -38,9 +38,24 @@
       padding: 0;
     }
 
-    /* single source of truth for the gradient */
-    html {
-      min-height: 100vh;
+    html,
+    body {
+      height: 100%;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 50% 100%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      line-height: 1.5;
+      color: var(--text-main);
+
+      /* single background source on body only */
       background:
         radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.45), transparent 55%),
         radial-gradient(circle at 100% 100%, rgba(249, 115, 22, 0.55), transparent 55%),
@@ -48,28 +63,15 @@
         linear-gradient(135deg, var(--bg-1), var(--bg-2));
       background-size: 140% 140%;
       animation: bgMove 24s ease-in-out infinite alternate;
-    }
 
-    body {
-      min-height: 100vh;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-      line-height: 1.5;
-      color: var(--text-main);
-      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
       text-align: center;
+
       overflow-x: hidden;
       overflow-y: auto;
-    }
-
-    @keyframes bgMove {
-      0% { background-position: 0% 0%; }
-      50% { background-position: 50% 100%; }
-      100% { background-position: 100% 50%; }
     }
 
     .noise {
