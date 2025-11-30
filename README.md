@@ -23,12 +23,6 @@ SVG icons (TikTok, GitHub, X, Instagram, Snapchat)
 Mobile-friendly layout
 
 <br>
-📁 Structure
-hasanmadeit/
-├── index.html   # Entire site in a single file (HTML + CSS)
-└── README.md
-
-<br>
 🎯 Purpose
 
 Showcase of:
