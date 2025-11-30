@@ -1,89 +1,91 @@
-HasanMadeIt.com
+# **HasanMadeIt.com**
 
-Personal portfolio — built as a lightweight, single-file HTML landing page with custom CSS, animated gradient background and subtle glassmorphism UI.
+Personal portfolio — lightweight single-page HTML with custom CSS, animated gradient background & subtle glassmorphism.
 
-<br>
-🚀 Live Site
+---
 
-https://hasanmadeit.com
+## 🚀 **Live Site**
 
-<br>
-📌 Tech Stack
+[https://hasanmadeit.com](https://hasanmadeit.com)
 
-Pure HTML + CSS (no frameworks)
+---
 
-Responsive layout with clamp(), flex, and media queries
+## 📌 **Tech Stack**
 
-Gradient background animation
+* Pure **HTML + CSS** (no frameworks)
+* Responsive layout using `clamp()`, `flex`, and media queries
+* Animated gradient background
+* Noise layer using `mix-blend-mode`
+* SVG social icons
+* Mobile-first layout
 
-Noise layer blend (mix-blend-mode)
+---
 
-SVG icons (TikTok, GitHub, X, Instagram, Snapchat)
-
-Mobile-friendly layout
-
-<br>
-🎯 Purpose
+## 🎯 **Purpose**
 
 Showcase of:
 
-7+ years building across web, AI, automation & crypto
+* 7+ years across **web, AI, automation & crypto**
+* Skills displayed as “chips”
+* Call-to-action social links
+* Version pill (for future iterations)
 
-Skills formatted as chips
+---
 
-Call-to-action social links
+## 🛡️ **Security Note**
 
-Version pill (for future updates)
+A non-intrusive crypto safety recommendation is included at the bottom:
+**Trezor hardware wallet referral link (10% off).**
+Can be removed or modified if you fork this project.
 
-<br>
-🛡️ Security Note
+---
 
-At the bottom of the page:
-A recommendation for safe crypto storage — Trezor hardware wallet referral link (10% off).
+## 📱 **Responsive**
 
-Feel free to remove or replace if you fork the project.
+| Device                   | Tested       |
+| ------------------------ | ------------ |
+| Desktop                  | ✔️           |
+| Tablet                   | ✔️           |
+| Mobile (Chrome / Safari) | ✔️           |
+| Dark Mode                | ✔️ (default) |
 
-<br>
-📱 Responsive
+---
 
-Works on:
+## 🛠️ **Local Setup**
 
-Device	Tested
-Desktop	✔️
-Tablet	✔️
-Mobile	✔️ Chrome / Safari
-Dark mode	✔️ Default
-<br>
-🛠️ Local Setup
+```bash
 git clone https://github.com/HasanMadeIt/HasanMadeIt-Site
 cd HasanMadeIt-Site
 open index.html
+```
 
+Or just **double-click `index.html`** to open it in your browser.
 
-Or just double-click index.html to open it in your browser.
+---
 
-<br>
-🧭 Next Up
+## 🧭 **Next Up**
 
-About page
+* About page
+* Projects page
+* Contact / Telegram integration
+* CV / Résumé export
+* AI tools showcase section
 
-Projects page
+---
 
-Contact / Telegram integration
+## 🔗 **Socials**
 
-CV / Résumé export
+| Platform    | Handle       |
+| ----------- | ------------ |
+| TikTok      | @HasanMadeIt |
+| GitHub      | @HasanMadeIt |
+| Instagram   | @HasanMadeIt |
+| X (Twitter) | @HasanMadeIt |
+| Snapchat    | @HasanMadeIt |
 
-AI tools showcase section
+---
 
-<br>
-🔗 Socials
-Platform	Link
-TikTok	@HasanMadeIt
-GitHub	@HasanMadeIt
-Instagram	@HasanMadeIt
-X (Twitter)	@HasanMadeIt
-Snapchat	@HasanMadeIt
-<br>
-📄 License
+## 📄 **License**
 
-MIT — free to use, edit, or learn from. Drop a star ⭐ if you find it useful.
+**MIT** — free to use, modify, or learn from.
+If this helped you, drop a **⭐ star** on the repo!
